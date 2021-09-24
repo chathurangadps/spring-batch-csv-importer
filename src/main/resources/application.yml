@@ -6,5 +6,15 @@ spring:
     password: root
   jpa:
     hibernate.ddl-auto: update
-    generate-ddl: true
     show-sql: true
+  batch:
+    job:
+      enabled: false
+    jdbc:
+        initialize-schema: always
+
+step:
+  chunk : 100
+input:
+  file: classpath:data.csv
+

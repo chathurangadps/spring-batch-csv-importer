@@ -11,6 +11,4 @@ import javax.persistence.*;
 @Table(name = "employee")
 @Entity
 @EqualsAndHashCode(callSuper = true)
-public class EmployeeEntity extends EmployeeProperty implements EntityDtoConvertable {
-
-}
+public class EmployeeEntity extends EmployeeProperty implements EntityDtoConvertable { }
