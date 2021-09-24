@@ -12,8 +12,8 @@ public interface EntityDtoConvertable {
 
     default <T> T toEntity(Class<T> type){
 
-        T t = BeanUtils.instantiateClass(type);
-        BeanUtils.copyProperties(this , t);
-        return t;
+        T entity = BeanUtils.instantiateClass(type);
+        BeanUtils.copyProperties(this , entity);
+        return entity;
     }
 }
